@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        .bg-dark{
+            background-color: #3d2a81!important;
+        }
+        .nav-link{
+            color:white;
+            border-color: 5px white solid;
+              
+        }
+        .dropdown-menu{
+              color:white;
+        }
+        .dropdown-item{
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#" style="font-size:25px;">HonduShoes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <table style="margin-left:350px">
+                <tr>
+                  <td><button style="margin-bottom: 2px;" class="form-control btn btn-primary" data-toggle="modal" data-target="#ingresar">Ingresar</button></td>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><button style="margin-bottom: 2px;" class="form-control btn btn-primary" data-toggle="modal" data-target="#registro">Registro</button></td>
+                </tr>  
+              </table>
+              </div>
+            </li>
+          </ul>  
+        </div>  
+        </nav>
+      <main role="main">
+          <div class="jumbotron">
+              <div class="container">
+                  <div class="row">
+                    <div id="listaZapatos">
+                       <!--<div class="card" style="width: 15rem; margin-left:10px;">
+                            <img src="img/a1.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <button class="form-control btn btn-primary">Comprar</button>
+                            </div>--> 
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </main>
+
+        <!--Modal de Ingresar Usuario-->
+        <div class="modal fade" id="ingresar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Correo Electrónico: <br>
+                <input class="form-control" type="text" placeholder="Correo Electónico"><br>
+                Contraseña: <br>
+                <input class="form-control" type="password" placeholder="Contraseña">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal de Registrar Usuario-->
+        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Correo Electrónico: <br>
+                <input class="form-control" type="text" placeholder="Correo Electónico"><br>
+                Contraseña: <br>
+                <input class="form-control" type="password" placeholder="Contraseña">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Registrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/controlador-cliente.js"></script>
+</body>
+</html>
